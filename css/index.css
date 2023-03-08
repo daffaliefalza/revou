@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+
+h1,h2,h3,h4 {
+    margin-top: 0;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* reusable styles */
+.container {
+    padding: 1em 1.5em;
+}
+
+/* .terminator {
+    width: 50%;
+    margin: 0 auto;
+} */
+
+.lines {
+    max-width: 200px ;
+    width: 50%;
+    height: 3px;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    margin: 25px 0;
+}
+
+.lines:nth-child(2) {
+        max-width: 200px ;
+    width: 50%;
+    height: 3px;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(0, 0, 0);
+}
+
+/* </ reusable styles */
+
+
+/* header */
+
+header {
+    background-color: #162045;
+    padding: 1.2em 0;
+}
+
+header, header a {
+    color: whitesmoke;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar ul {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    margin-right: 10px;
+}
+
+
+
+/* showcase */
+
+.showcase, .headline {
+    color: #fff;
+}
+
+.headline {
+    text-align: center;
+    padding: 1.5em 2.5em;
+    
+}
+
+.headline h1,p {
+    opacity: 80%;
+}
+
+.headline p {
+    margin: 0;
+}
+
+.showcase, .headline {
+    background-color: #4A6C9F;
+}
+
+#quotes {
+    color: #ccd9e4;
+    font-style: italic;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile .icon {
+    margin-right: 15px;
+}
+
+.user-profile .criteria {
+    color: #ccd9e4;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.benefits {
+    padding: 0 1.2em;
+}
+
+.benefits li {
+    margin: 10px 0;
+}
+
+/* contact */
+
+.contact {
+    border: 2px solid #fff;
+    padding: 0.5em 1.5em;
+}
+
+.contact p {
+    margin-bottom: 3em;
+}
+
+.contact label, select {
+    display: block;
+    margin: 10px 0;
+}
+
+
+.contact input,select {
+    width: 100%;
+    padding: 0.8em 15px;
+}
+
+.contact input[type="text"], 
+ input[type="email"] {
+    font-size: 1rem;
+}
+
+.contact button {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0.8em 0;
+    background-color: #c29f10;
+    border: 0;
+    cursor: pointer;
+}
+
+/* our package */
+
+.our-package {
+    background-color: #ffffff;
+
+}
+
+.our-package__headline {
+       background-color: rgba(0,0,0,0.2);
+
+    text-align: center;
+    padding: 5em 0;
+    margin-bottom: 1.5em;
+}
+
+.our-package .row {
+    padding: 2em 0;
+}
+
+.our-package .row .col {
+        background-color: rgb(0, 0, 0);
+        margin: 15px 0;
+}
+
+.our-package .row .col span,h4 {
+    color :#fff;
+}
+
+/* cta */
+
+.cta {
+    text-align: center;
+    padding: 3em 0;
+    background-color: rgba(0,0,0,0.2);
+    
+}
+
+.cta p {
+    color: #000;
+    margin: 15px 0;    
+}
+
+.cta .btn-cta {
+    padding: 1.2em 1.5em;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ;
+}
+
+.cta .btn-cta:hover {
+    opacity: 0.825;
+}
+
+/* footer */
+
+footer {
+    background-color: #162045;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+footer,  a, p {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+@media (min-width: 800px) {
+
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    
+    .showcase .container {
+        display: flex;
+        gap: 15px;
+    }
+
+    .contact {
+        height: 600px;
+    }
+
+    .row {
+        display: flex;
+        gap: 15px;
+    }
+
+    .row .col {
+        padding: 0.5em 1em;
+    }
+}
+
+@media (min-width: 900px) {
+    .navbar {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
